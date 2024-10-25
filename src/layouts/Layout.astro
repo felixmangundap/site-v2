@@ -24,6 +24,9 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	body {
+		margin: 0;
+	}
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
@@ -37,7 +40,7 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: "Libre Baskerville", serif;
-		background: #F5E3CA;
+		background: #efefef;
 	}
 	code {
 		font-family:
@@ -49,5 +52,15 @@ const { title } = Astro.props;
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+	h1,
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	.bento {
+		border: 0.25rem solid #333;
+		border-radius: 1rem;
+		padding: 2rem;
 	}
 </style>

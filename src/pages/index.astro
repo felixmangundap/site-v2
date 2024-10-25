@@ -1,10 +1,55 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import {
+	FaGithub,
+	FaInstagram,
+	FaLinkedin,
+	FaFileAlt,
+} from "react-icons/fa";
+import Layout from "../layouts/Layout.astro";
+import Resume from "../../public/Resume_Felix_Mangundap.pdf"
 ---
 
 <Layout title="Welcome to Astro.">
 	<div class="container">
-		<h1 class="text-base">Felix Mangundap</h1>
+		<div class="frame"></div>
+		<div class="footer">
+			<div class="icon-button">
+				<a href={Resume} rel="noopener noreferrer" target="_blank"
+					><FaFileAlt size="1.5em" />
+				</a>
+			</div>
+			<!-- <div class="icon-button">
+					<a href='mailto:felix.mangundap@gmail.com'><FaEnvelope size="2em"/></a>
+				</div> -->
+			<div class="icon-button">
+				<a
+					href="https://www.linkedin.com/in/felix-mangundap/"
+					rel="noopener noreferrer"
+					target="_blank"
+				>
+					<FaLinkedin size="1.5em" />
+				</a>
+			</div>
+			<h1 class="text-base">felix mangundap</h1>
+			<div class="icon-button">
+				<a
+					href="https://github.com/felixmangundap"
+					rel="noopener noreferrer"
+					target="_blank"
+				>
+					<FaGithub size="1.5em" />
+				</a>
+			</div>
+			<div class="icon-button">
+				<a
+					href="https://www.instagram.com/lixlens/"
+					rel="noopener noreferrer"
+					target="_blank"
+				>
+					<FaInstagram size="1.5em" />
+				</a>
+			</div>
+		</div>
 	</div>
 </Layout>
 
@@ -21,13 +66,48 @@ import Layout from '../layouts/Layout.astro';
 	.container {
 		margin: auto;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		justify-content: end;
+		align-items: center;
 	}
 	.frame {
-		border: 0.25rem solid #9d673a;
+		width: calc(100% - 200px);
+		height: calc(100vh - 250px);
 		border-radius: 1rem;
+		background: #777;
+	}
+	.footer {
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+	.icon-button {
+		border: 1px solid #777;
+		border-radius: 50%;
+		width: 2.5em;
+		height: 2.5em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 1rem;
+	}
+	.icon-button > a {
+		color: #777;
+		margin: 0;
+		padding: 0;
+		size: 1.5em;
+		height: 1.5em;
+		width: 1.5em;
+	}
+	.icon-button:is(:hover, :focus-within) {
+		background: #777;
+	}
+	.icon-button:is(:hover, :focus-within) a {
+		color: rgb(var(--accent-light));
 	}
 	.astro-a {
 		position: absolute;
@@ -39,14 +119,12 @@ import Layout from '../layouts/Layout.astro';
 		z-index: -1;
 	}
 	h1 {
-		font-size: 4rem;
+		font-size: 3rem;
 		font-weight: 700;
+		color: #222;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-base {
-		color: #9d673a;
+		margin: 0 1rem
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -58,7 +136,10 @@ import Layout from '../layouts/Layout.astro';
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
