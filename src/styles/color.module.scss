@@ -1,0 +1,69 @@
+/* Colour Palette */
+
+$color50: #f9f6f3;
+$color100: #f2ece2;
+$color200: #e3d7c5;
+$color300: #d2bd9f;
+$color400: #c6a988;
+$color500: #b1875e;
+$color600: #a47552;
+$color700: #885e46;
+$color800: #6f4e3d;
+$color900: #5a4034;
+$color950: #30211a;
+
+
+// $color50: #fdf8ef;
+// $color100: #fcf3e3;
+// $color200: #f6dbb2;
+// $color300: #f0c281;
+// $color400: #e99f4e;
+// $color500: #e3842c;
+// $color600: #d56b21;
+// $color700: #b0521e;
+// $color800: #8d431f;
+// $color900: #72381c;
+// $color950: #3d1a0d;
+
+
+// $color50: #f8fafc;
+// $color100: #f1f5f9;
+// $color200: #e2e8f0;
+// $color300: #cbd5e1;
+// $color400: #94a3b8;
+// $color500: #64748b;
+// $color600: #475569;
+// $color700: #334155;
+// $color800: #1e293b;
+// $color900: #0f172a;
+// $color950: #020617;
+
+$primary: $color400;
+$secondary: #eee;
+
+$white: #eee;
+$darkGrey: #333;
+
+$text: $color700;
+$darkText: #333;
+
+$bentoBg: $color50;
+$bentoBorder: $color400;
+
+$bg: $color100;
+
+$resume: #00b13b;
+$email: #b10000;
+$linkedin: #0072b1;
+$github: #333;
+
+
+@mixin neumorphism-light {
+  border: 1px solid rgba(255, 255, 255, .25);
+  box-shadow: 4px 4px 16px #dddddd, -4px -4px 16px #ffffff;
+}
+
+@mixin neumorphism-inner-light {
+  border: 1px solid rgba(255, 255, 255, .25);
+  box-shadow: inset 4px 4px 16px #dddddd, inset -4px -4px 16px #ffffff;
+}
