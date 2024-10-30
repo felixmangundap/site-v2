@@ -39,11 +39,12 @@
   grid-area: 7 / 8 / 9 / 11;
 }
 
-// .nightModeBox {
-//   grid-area: 1 / 8 / 3 / 9;
-// }
 .nightModeBox {
   grid-area: 3 / 5 / 5 / 6;
+}
+
+.swatchBox {
+  grid-area: 3 / 5 / 7 / 6;
 }
 
 .quoteBox {
@@ -174,6 +175,36 @@
 
 .summaryBox {
   align-items: flex-start;
+  justify-content: flex-start;
+
+  .header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+  }
+
+  .paragraph {
+    margin-bottom: 1rem;
+  }
+
+  .arsenal {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .iconLink {
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+  }
+  
+  .divider {
+    height: 1.25rem;
+    width: 1px;
+    background: $primary;
+    margin-right: 0.75rem;
+  }
 }
 
 .photoBoxLeft {

@@ -7,7 +7,7 @@ import * as style from './style.module.scss';
 const ProjectTwoBento = () => {
 	return (
 		<div className={`${style.bentoBox} ${style.projectBoxTwo}`}>
-			<a className={style.hoverOverlay}>
+			<a className={style.hoverOverlay} href='https://devpost.com/software/ustudents' target='_blank'>
 				<div className={style.hoverOverlayContainer}>
 					<div className={style.pill}>uStudents <FaAngleRight size={'0.8rem'} /></div>
 				</div>

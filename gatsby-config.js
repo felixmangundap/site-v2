@@ -3,13 +3,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `site-v2`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Felix Mangundap`,
+    description: `Example project for the Gatsby Head API`,
+    image: `/images/logo.svg`,
+    siteUrl: `localhost:8000`,
   },
   plugins: ["gatsby-plugin-sass",  "gatsby-plugin-image", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/images/logo.svg"
     }
   }, "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',

@@ -4,6 +4,7 @@ import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa'
 import '../styles/style.scss'
 import * as style from '../styles/main.scss'
 
+import { SEO } from '../components/seo';
 import Resume from '../files/Resume_Felix.pdf';
 
 import PhotoBento from '../bento/photo'
@@ -17,6 +18,7 @@ import ProjectTwoBento from '../bento/projectTwo'
 import QuoteBento from '../bento/quote'
 import SummaryBento from '../bento/summary';
 import LandingV2Bento from '../bento/landingV2';
+import SwatchBento from '../bento/swatch';
 
 const IndexPage = (props) => {
 
@@ -24,8 +26,8 @@ const IndexPage = (props) => {
     <div>
       <div className="container">
         <div className="bento-container">
-          {/* <LandingBento /> */}
-          <NightModeBento />
+          {/* <NightModeBento /> */}
+          <SwatchBento />
           <LandingV2Bento />
           <PortraitBento />
           <SummaryBento />
@@ -62,3 +64,7 @@ const IndexPage = (props) => {
 }
 
 export default IndexPage
+
+export const Head = () => (
+  <SEO />
+)
