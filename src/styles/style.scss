@@ -1,0 +1,67 @@
+/* Stylesheets */
+
+@use './color.module.scss' as *;
+
+/* Structure */
+
+html, .main {
+  background-color: $bg;
+}
+
+/* Typography */
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: 'Libre Baskerville';
+  font-weight: normal;
+  margin: 0;
+  color: $text;
+}
+
+a {
+  // color: $primary;
+  // text-decoration: none;
+  cursor: pointer;
+  // &:hover {
+  //   opacity: 0.75;
+  // }
+}
+
+::selection {
+  background: $primary;
+  color: $white;
+}
+
+::-moz-selection {
+  background: $primary;
+  color: $white;
+}
+
+/* Basic Component */
+
+@media (min-width: 992px) {
+  .container {
+      margin-right: auto;
+      margin-left: auto;
+      width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+
+.footer {
+  margin-top: 3em;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+}
