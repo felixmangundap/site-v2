@@ -26,7 +26,7 @@ const SummaryBento = () => {
 					<SiGraphql className={style.iconLink} />
 				</div>
 			</div>
-			<p className={style.paragraph}>Beyond coding, I'm passionate about photography, traveling, the art of coffee!</p>
+			<p className={style.paragraph}>Beyond coding, I'm passionate about photography, traveling, and the art of coffee!</p>
 			<p className={style.paragraph}>My goal for the next few years is to travel more and experience what the world has to offer.</p>
 			<p>Don't be shy, let's connect!</p>
 		</div>

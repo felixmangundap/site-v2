@@ -7,12 +7,12 @@ import * as style from './style.module.scss';
 const ProjectOneBento = () => {
 	return (
 		<div className={`${style.bentoBox} ${style.projectBoxOne}`}>
-			<a className={style.hoverOverlay}>
+			<a className={style.hoverOverlay} href='https://datefromnow.com/' target='_blank'>
 				<div className={style.hoverOverlayContainer}>
-					<div className={style.pill}>project One <FaAngleRight size={'0.8rem'} /></div>
+					<div className={style.pill}>datefromnow <FaAngleRight size={'0.8rem'} /></div>
 				</div>
 			</a>
-			<StaticImage className={style.photo} src={'../images/nyc.jpg'} alt={'nyc'} />
+			<StaticImage className={style.photo} src={'../images/date.png'} alt={'nyc'} />
 		</div>
 	)
 }

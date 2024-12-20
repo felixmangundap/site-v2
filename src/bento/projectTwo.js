@@ -12,7 +12,7 @@ const ProjectTwoBento = () => {
 					<div className={style.pill}>uStudents <FaAngleRight size={'0.8rem'} /></div>
 				</div>
 			</a>
-			<StaticImage className={style.photo} src={'../images/nyc.jpg'} alt={'nyc'} />
+			<StaticImage className={style.photo} src={'../images/ustudents.png'} alt={'nyc'} />
 		</div>
 	)
 }
