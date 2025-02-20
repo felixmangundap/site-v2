@@ -7,7 +7,7 @@ const PortraitBento = () => {
 	return (
 		<div className={`${style.bentoBox} ${style.portraitBox}`}>
 			<div className={style.hoverOverlay}></div>
-			<StaticImage className={style.photo} src='../images/self.jpg' alt='Felix' />
+			<StaticImage className={style.photo} src='../images/self.jpeg' alt='Felix' />
 		</div>
 	)
 }

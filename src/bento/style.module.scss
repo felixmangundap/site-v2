@@ -24,7 +24,7 @@
 }
 
 .portraitBox {
-  grid-area: 3 / 6 / 7 / 9;
+  grid-area: 3 / 5 / 7 / 9;
 }
 
 .photoBox {
@@ -189,7 +189,7 @@
 
   .arsenal {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
     margin-bottom: 1rem;
   }
@@ -299,13 +299,16 @@
 }
 
 @media (max-width: 768px) {
+  .bentoBox {
+    margin-bottom: 1rem;
+  }
+
   .card {
     display: flex;
     flex-flow: column;
     width: 100%;
     height: 300px;
     padding: 15px;
-    margin: 15px 0;
   }
 
   .cardImg {

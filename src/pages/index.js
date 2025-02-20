@@ -21,42 +21,67 @@ import LandingV2Bento from '../bento/landingV2';
 import SwatchBento from '../bento/swatch';
 
 const IndexPage = (props) => {
+  const isMobile = window.innerWidth <= 768;
 
   return (
     <div>
       <div className="container">
         <div className="bento-container">
-          {/* <NightModeBento /> */}
-          <SwatchBento />
           <LandingV2Bento />
           <PortraitBento />
           <SummaryBento />
+          {isMobile ?
+            <div className="mobile-link-container">
+              <div className='mobile-link-box'>
+                <a className={style.squareButton} href='https://www.linkedin.com/in/felix-mangundap/' rel="noopener noreferrer" target='_blank'>
+                  <FaLinkedin size={20} />
+                </a>
+              </div>
+              <div className='mobile-link-box'>
+                <a className={style.squareButton} href='https://github.com/felixmangundap' rel="noopener noreferrer" target='_blank'>
+                  <FaGithub size={20} />
+                </a>
+              </div>
+              <div className='mobile-link-box'>
+                <a className={style.squareButton} href={Resume} rel="noopener noreferrer" target='_blank'>
+                  <FaFileAlt size={20} />
+                </a>
+              </div>
+              <div className='mobile-link-box'>
+                <a className={style.squareButton} href='mailto:felix.mangundap@gmail.com'>
+                  <FaEnvelope size={20} />
+                </a>
+              </div>
+            </div>
+            : <>
+              <SquareBento>
+                <a className={style.squareButton} href='https://www.linkedin.com/in/felix-mangundap/' rel="noopener noreferrer" target='_blank'>
+                  <FaLinkedin size={20} />
+                </a>
+              </SquareBento>
+              <SquareBento>
+                <a className={style.squareButton} href='https://github.com/felixmangundap' rel="noopener noreferrer" target='_blank'>
+                  <FaGithub size={20} />
+                </a>
+              </SquareBento>
+              <SquareBento>
+                <a className={style.squareButton} href={Resume} rel="noopener noreferrer" target='_blank'>
+                  <FaFileAlt size={20} />
+                </a>
+              </SquareBento>
+              <SquareBento>
+                <a className={style.squareButton} href='mailto:felix.mangundap@gmail.com'>
+                  <FaEnvelope size={20} />
+                </a>
+              </SquareBento>
+            </>
+          }
           <PhotoBento />
           <ProjectOneBento />
           <ProjectTwoBento />
-          <TimeBento />
           <QuoteBento />
+          <TimeBento />
           <FooterBento />
-          <SquareBento>
-            <a className={style.squareButton} href='https://www.linkedin.com/in/felix-mangundap/' rel="noopener noreferrer" target='_blank'>
-              <FaLinkedin size={20} />
-            </a>
-          </SquareBento>
-          <SquareBento>
-            <a className={style.squareButton} href='https://github.com/felixmangundap' rel="noopener noreferrer" target='_blank'>
-              <FaGithub size={20} />
-            </a>
-          </SquareBento>
-          <SquareBento>
-            <a className={style.squareButton} href={Resume} rel="noopener noreferrer" target='_blank'>
-              <FaFileAlt size={20} />
-            </a>
-          </SquareBento>
-          <SquareBento>
-            <a className={style.squareButton} href='mailto:felix.mangundap@gmail.com'>
-              <FaEnvelope size={20} />
-            </a>
-          </SquareBento>
         </div>
       </div>
     </div>
