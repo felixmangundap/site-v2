@@ -2,7 +2,6 @@
 
 @use './color.module.scss' as *;
 
-
 main {
     margin: auto;
     padding: 1rem;
@@ -11,6 +10,15 @@ main {
 }
 
 @media (min-width: 769px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
     .container {
         margin: auto;
         width: 1200px;
@@ -80,7 +88,7 @@ main {
         align-items: center;
         justify-content: center;
     }
-    
+
     .mobile-link-box:nth-child(odd) {
         margin-right: 1rem;
     }
