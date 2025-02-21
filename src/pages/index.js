@@ -21,7 +21,7 @@ import LandingV2Bento from '../bento/landingV2';
 import SwatchBento from '../bento/swatch';
 
 const IndexPage = (props) => {
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
 
   return (
     <div>
