@@ -5,7 +5,7 @@ import '../styles/style.scss'
 import * as style from '../styles/main.scss'
 
 import { SEO } from '../components/seo';
-import Resume from '../files/Resume_Felix.pdf';
+import Resume from '../files/Resume_Felix_Mangundap.pdf';
 
 import PhotoBento from '../bento/photo'
 import TimeBento from '../bento/time'
